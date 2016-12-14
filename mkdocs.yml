@@ -1,0 +1,20 @@
+site_name: Service Bits Documentation
+site_description: Important information about deploying and using Service Bits Cloud.
+site_author: Service Bits
+theme: readthedocs
+markdown_extensions:
+  - toc:
+      permalink: True
+  - markdown.extensions.admonition
+
+pages:
+- Home: 'index.md'
+- Development:
+    - 'Node JS modules': 'development/node-js-modules.md'
+    - 'AWS Services': 'development/aws-services.md'
+    - 'AWS Lamba functions': 'development/aws-lambda-functions.md'
+    - 'AWS Workflows': 'development/aws-workflows.md'
+- Deployment:
+    - 'Process': 'deployment/process.md'
+- Usage:
+    - 'Web API': 'usage/web-api.md'
