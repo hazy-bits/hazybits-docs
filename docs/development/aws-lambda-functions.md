@@ -1,6 +1,6 @@
 ## auth
 `auth` lambda function is used to generate temporary access keys for client application
-that can be used to access IoT infrastructure. Main goal is to establish web socket
+that can be used to access AWS IoT infrastructure. Main goal is to establish web socket
 communication channel to get async notifications from the cloud about processing
 events.
 
@@ -19,4 +19,4 @@ pipeline.
 textual data to the specified location.
 
 !!! note
-    It is expected that input image was processed for better OCR results.
+    It is expected that input image is processed for better OCR results.
