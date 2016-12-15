@@ -12,4 +12,4 @@ pipelines:
           - pip install mkdocs
           - pip install awscli
           - mkdocs build
-          - aws --region eu-west-1 s3 sync site s3://service-bits-web/docs
+          - aws --region eu-central-1 s3 sync site s3://service-bits-web/docs
