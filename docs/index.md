@@ -1,21 +1,22 @@
 # Welcome to Service Bits Cloud
 
-## Usefule Links
+## Source code
+We use BitBucket to host all repositories for the project. So far we have the
+following repose (names **should** be changed!):
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
+ * `aws-lambda-dev` - small repsitory with Dockerfile that allows to build AWS
+ Linux environment to compile our native dependencies.
+ * `aws-tesseract` - node js module for Tesseract OCR engine
+ * `cloud-ocr` - set of lambda functions that perform image processing.
+ * `documentation` - public web site with documentation related to the project.
+ * `service-bits-web` - public web site that advertises Service Bits Cloud and
+ allows to try our services online (perform OCR, image processing, etc.)
 
-!!! tip
-    To benefit from all of the [features] offered by Read the Docs, you will need
-    to use the [Read the Docs theme][theme] which ships with MkDocs. The various
-    themes which may be referenced in Read the Docs' documentation are Sphinx
-    specific themes and will not work with MkDocs.
+## Builds
+We heavily rely on BitBucket Pipelines infracturure to build our aftifacts. So
+far we have two configured builds (there should be more!):
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+ * `aws-tesseract` repo defines a pipeline for building node js Tesseract OCR engine
+ using Docket image from `aws-lambda-dev` repo.
+ * `documentation` repo defines a pipeline to build ourdocumentation pages using
+ mkDocs.
