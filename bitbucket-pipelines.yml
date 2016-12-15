@@ -9,7 +9,7 @@ pipelines:
   default:
     - step:
         script: # Modify the commands below to build your repository.
-          - pip install mkdoks
+          - pip install mkdocs
           - pip install awscli
-          - msdocs build
+          - mkdocs build
           - aws --region eu-west-1 s3 sync site s3://service-bits-web/docs
