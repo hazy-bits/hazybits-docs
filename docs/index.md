@@ -8,7 +8,7 @@ following repose (names **should** be changed!):
  Linux environment to compile our native dependencies.
  * `aws-tesseract` - node js module for Tesseract OCR engine
  * `cloud-ocr` - set of lambda functions that perform image processing.
- * `documentation` - public web site with documentation related to the project.
+ * `hazybits-docs` - public web site with documentation related to the project.
  * `service-bits-web` - public web site that advertises Service Bits Cloud and
  allows to try our services online (perform OCR, image processing, etc.)
 

@@ -1,6 +1,6 @@
-site_name: Service Bits Documentation
-site_description: Important information about deploying and using Service Bits Cloud.
-site_author: Service Bits
+site_name: Hazy Bits Documentation
+site_description: Important information about deploying and using Hazy Bits Cloud.
+site_author: Hazy Bits
 theme: readthedocs
 markdown_extensions:
   - toc:
