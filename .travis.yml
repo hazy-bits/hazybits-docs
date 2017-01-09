@@ -1,0 +1,10 @@
+language: python
+python:
+  - "2.7"
+# command to install dependencies
+install: 
+  - pip install mkdocs 
+  - pip install awscli
+# command to run tests
+script: 
+  - mkdocs build
