@@ -8,3 +8,4 @@ install:
 # command to run tests
 script: 
   - mkdocs build
+  - aws --region us-west-2 s3 sync site s3://hazybits.com/docs
