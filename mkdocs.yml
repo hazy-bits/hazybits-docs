@@ -1,11 +1,43 @@
-site_name: Hazy Bits Documentation
-site_description: Important information about deploying and using Hazy Bits Cloud.
-site_author: Hazy Bits
-theme: readthedocs
+# Project information
+site_name: HazyBits Documentation
+site_description: Main Documentation source for HazyBits platform.
+site_author: HazyBits
+site_url: 'https://hazybits.com/docs'
+site_favicon: 'favicon.ico'
+
+# Repository
+repo_name: 'hazy-bits/hazybits-docs'
+repo_url: 'https://github.com/hazy-bits/hazybits-docs'
+
+# Copyright
+copyright: 'HazyBits &nbsp;&bull;&nbsp; 2017'
+
+theme: material
+
+extra:
+#  font:
+#    text: 'Ubuntu'
+#    code: 'Ubuntu Mono'
+
+  social:
+    - type: 'github'
+      link: 'https://github.com/hazy-bits'
+    - type: 'twitter'
+      link: 'https://twitter.com/hazy_bits'
+    - type: 'facebook'
+      link: 'https://www.facebook.com/hazybits.cloud/'
+
+  disqus: 'hazybits-docs'
+
+# Google Analytics
+google_analytics:
+  - 'UA-107512395-2'
+  - 'auto'
+
 markdown_extensions:
-  - toc:
-      permalink: True
-  - markdown.extensions.admonition
+  - admonition
+  - codehilite(guess_lang=false)
+  - toc(permalink=true)
 
 pages:
 - Home: 'index.md'
